@@ -1,2 +1,28 @@
-\section{Introduction}\label{sec:intro}
+\section{Introduction}\label{sec:related}
 
+- Key questions about sharing of benign data alone:
+- If homogeneous, more data will not hinder performance? \\
+- If heterogeneous, expressive enough (deep) models should be able to learn, what happens with shallow models?\\
+- Questions about malicious data sharing:
+- Not shared for unsupervised
+- Shared along with labels for S and SS
+
+Contributions:
+1. Clearly map out a taxonomy of data sharing for network security
+2. Establish baselines when data sharing is helpful (with regards to data, model and sharing)
+3. Practical method to model and understand data heterogenity
+
+
+- What's missing? Different modes of data sharing, different learning paradigms, unclear what the performance gains from sharing are \\
+- This paper characterizes in what scenarios data sharing can help:
+- Data heterogenity when building a model of `normal behavior' (affects FP rates, will not affect TP) \\
+- Modeling data het. is an open problem, especially for different classes of benign data
+- Different learning paradigms: how is unsupervised learning aided by more data?\\
+- Robustness to errors in labeling (ending up with malicious data in benign split)
+
+- Experiment structure:
+- Datasets: IDS, IoT, BAS
+- Models: RF, IF
+- Direct data sharing: S, US, SS; tune data het. for each
+- Model sharing: S, US, SS
+- Interpretation of results for different attack types

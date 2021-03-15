@@ -1,4 +1,5 @@
-\documentclass[conference=acm]{confpaper}
+\documentclass[conference=acm,letterpaper]{confpaper}
+%\documentclass[10pt,sigconf,letterpaper,anonymous]{acmart}
 
 % General
 % -------
@@ -25,13 +26,16 @@
                   minimum height=0.35in}
 }
 
+\newcommand{\arjun}[1]{\textcolor{blue}{(Arjun:#1)}}
+\newcommand{\TODO}[1]{\textcolor{red}{TODO:#1}}
+
 %%%%%%%%%%%%%%%%%%%%  SPACE SAVINGS %%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[all=normal,wordspacing]{savetrees}
 
 %%%%%%%%%%%%%%%%%%%%  TITLE/AUTHORS  %%%%%%%%%%%%%%%%%%%%%
 
-\title{Title}
+\title{An Empirical Analysis of the Impact of Data Sharing on Anomaly Detection for Network Security}
 
 \author{ Authors }
 
@@ -43,13 +47,17 @@
 
 \begin{document}
 
-\input{abstract}
+\input{sections/abstract}
 
 \maketitle
 
-\input{introduction}
-\input{related}
-\label{lastpage}\input{conclusion}
+\input{sections/introduction}
+\input{sections/background}
+\input{sections/data_het}
+\input{sections/learning_paradigms}
+\input{sections/discussion}
+\input{sections/related}
+\label{lastpage}\input{sections/conclusion}
 
 \microtypesetup{protrusion=false}
 
